@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <script src="js/jqerry.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <section class="main-frame">
+        <div class="sidebar-frame">
+            <div class="frame-group">
+                <div class="tallyflow-frame">
+                    <a class="TallyFlow">TallyFlow</a>
+                    <img class="frame-child" alt="icon" src="img/vector-190.svg">
+                </div>
+
+                <nav class="nav-content-frame list-unstyled">
+                    <li class="nav-item">
+                        <a class="sidebar-navs-links active" href="index.html">
+                            <img src="img/management-icon.svg" alt="icon">Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="sidebar-navs-links" data-toggle="collapse" data-target="#userManagement">
+                            <img src="img/user-management.svg" alt="icon"><span>User Management</span>
+                            <img src="img/uilangledown.svg" class="arrow-icon" alt="icon">
+                        </a>
+                        <div class="collapse gap-link" id="userManagement">
+                            <a href="asign-role.html" class="links-check">
+                                <div class="check mt-1 "></div>Assign Role
+                            </a>
+                            <a href="clients-list.html" class="links-check">
+                                <div class="check mt-1"></div>List of clients
+                            </a>
+                            <a href="tanants-list.html" class="links-check">
+                                <div class="check mt-1"></div>List of Tenants
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="sidebar-navs-links" data-toggle="collapse" data-target="#planSubscriptions">
+                            <img src="img/plans--subscriptions.svg" alt="icon"><span>Plan & Subscriptions</span>
+                            <img src="img/uilangledown.svg" class="arrow-icon" alt="icon">
+                        </a>
+                        <div class="collapse gap-link" id="planSubscriptions">
+                            <a href="plan-and-features.html"  class="links-check">
+                                <div class="check mt-1"></div>Set Plans/Add Features
+                            </a>
+                            <a href="subcription.html" class="links-check">
+                                <div class="check mt-1"></div>Set Subscriptions
+                            </a>
+                            <a href="send-mail.html" class="links-check">
+                                <div class="check mt-1"></div>Promotion/Send E-Mail
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="sidebar-navs-links" data-toggle="collapse" data-target="#payments">
+                            <img src="img/financial.svg" alt="icon"><span>Financial</span>
+                            <img src="img/uilangledown.svg" class="arrow-icon" alt="icon">
+                        </a>
+                        <div class="collapse gap-link" id="payments">
+                            <a href="payments.html" class="links-check">
+                                <div class="check mt-1"></div>Payments
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="sidebar-navs-links" data-toggle="collapse" data-target="#supports">
+                            <img src="img/vector-1.svg" alt="icon"><span>Support</span>
+                            <img src="img/uilangledown.svg" class="arrow-icon" alt="icon">
+                        </a>
+                        <div class="collapse gap-link" id="supports">
+                            <a href="ticket-supports.html" class="links-check">
+                                <div class="check mt-1"></div>ticket-supports
+                            </a>
+                            <a href="documentation.html" class="links-check">
+                                <div class="check mt-1"></div>Documentation
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="sidebar-navs-links" data-toggle="collapse" data-target="#accounts">
+                            <img src="img/account.svg" alt="icon"><span>Account</span>
+                            <img src="img/uilangledown.svg" class="arrow-icon" alt="icon">
+                        </a>
+                        <div class="collapse gap-link" id="accounts">
+                            <a href="database-backup.html" class="links-check">
+                                <div class="check mt-1"></div>Database Backup
+                            </a>
+                            <a href="account-setting.html" class="links-check">
+                                <div class="check mt-1"></div>Account Setting
+                            </a>
+                        </div>
+                    </li>
+                </nav>
+            </div>
+            <div class="user-card-wrapper">
+                <div class="user-card">
+                    <div class="frame-container">
+                        <div class="user-image-parent">
+                            <div class="user-image"><img src="img/ca_profile_img.jpg" alt=""></div>
+                            <div class="credentials-wrapper">
+                                <div class="credentials">
+                                    <div class="david-sorbitol">David Sorbitol</div>
+                                    <div class="davidemailcom">david@email.com</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vector-wrapper">
+                            <img class="vector-icon1" loading="lazy" alt="" src="./img/vector-2.svg"
+                                aria-colspan="arrow-icon">
+                        </div>
+                    </div>
+                    <div class="logout-t" style="display: none;">
+                        <a class="logout text-center" href='#'>Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-section-component">
+            <!-- top section -->
+            <header class="top-section">
+                <div class="top-serch-bar">
+                    <img src="img/iconsearch@2x.png " class="abosolute-img" width="20px" height="20px" alt="">
+                    <input type="text" name="search" class="Search" placeholder="Search">
+                    <input type="button" value="Search" class="search-btn ">
+                </div>
+
+                <div class="call-notification">
+                    <div class="call">
+                        <a class="call-us">Call Us:</a>
+                        <a class="call-us1">0000-0000-00</a>
+                    </div>
+                    <img class="call-icon" alt="" src="img/call-icon.svg">
+                    <div class="notifications">
+                        <div class="buttons" id="notification-btn">
+                            <img class="notification-icon" loading="lazy" alt="notification" src="img/notification.svg">
+                            <div class="notification-section" style="display: none;">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="home-tab" data-toggle="tab"
+                                            data-target="#home" type="button" role="tab" aria-controls="home"
+                                            aria-selected="true">Notifications</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="profile-tab" data-toggle="tab"
+                                            data-target="#profile" type="button" role="tab" aria-controls="profile"
+                                            aria-selected="false">Announcements</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                        aria-labelledby="home-tab">...1</div>
+                                    <div class="tab-pane fade" id="profile" role="tabpanel"
+                                        aria-labelledby="profile-tab">
+                                        ...2</div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="buttons profile-btn" id="profile-btn">
+                            <img class="user-icon" loading="lazy" id="profile-toggle" alt="notification"
+                                src="img/user.svg">
+                            <div class="profile-section " id="profile-section" style="display:none;">
+                                <div class="profile-name-content">
+                                    <div>
+                                        <img class="profile-image" src="img/profile-card.png" alt="profile">
+                                    </div>
+                                    <div class="flex-name-id">
+                                        <h4><b>CA Name</b></h4>
+                                        <p>USer ID : <span> CA0001</span></p>
+                                        <p>Email : <span> ca001@gmail.com</span></p>
+                                        <p>Type : <span>ca</span></p>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-right d-block ml-auto text-danger">
+                                    <span><img src="img/logout.svg" alt="logout"></span> Sign Out</a>
+                                <div class="profile-box"></div>
+                                <div class="profile-box"></div>
+                                <div class="profile-box"></div>
+                                <div class="profile-box"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- top section -->
+
+
+            <div class="middle-frame-section pt-4 home-middle-section">
+                <div class="container-fluid section-frame">
+                    <div class="first-two container-fluid">
+                        <div class="subscription-card">
+                            <div class="subscription-content">
+                                <img class="bgshape-icon" loading="lazy" alt="" src="img/bgshape.svg">
+
+                                <div class="element-4"></div>
+                            </div>
+                            <div class="badge-content-wrapper">
+                                <div class="badge-content">
+                                    <div class="badge-icon-wrapper">
+                                        <div class="badge-icon">
+                                            <div class="badge">
+                                                <div class="badge-buttons">
+                                                    <img class="button-icon" loading="lazy" alt=""
+                                                        src="img/button@2x.png">
+
+                                                    <img class="button-2-icon" alt="" src="img/button-2@2x.png">
+                                                </div>
+                                            </div>
+                                            <div class="badge-tail">
+                                                <div class="wrapper-element-5">
+                                                    <img class="element-5-icon" alt="" src="img/element-5.svg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="heading-element">
+                                        <h1 class="heading">Welcome to the team!</h1>
+                                        <div class="element-6"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component-174">
+                            <div class="trial-content">
+                                <div class="trial-icon-parent">
+                                    <div class="trial-icon">
+                                        <div class="trial-icons"></div>
+                                        <img class="uil-clipboard-notes-icon" loading="lazy" alt=""
+                                            src="img/uilclipboardnotes.svg">
+                                    </div>
+                                    <div class="client-card">
+                                        <div class="client-content">
+                                            <a class="total-clients">Total Clients</a>
+                                            <div class="see-your-total">
+                                                See your total clients
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="support-card">
+                                    <b class="b">00001</b>
+                                    <div class="arrow">
+                                        <img class="icons" loading="lazy" alt="" src="img/icons.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid card-row">
+                        <div class="component-174 component-175">
+                            <div class="trial-content">
+                                <div class="trial-icon-parent">
+                                    <div class="trial-icon">
+                                        <div class="trial-icons"></div>
+                                        <img class="uil-clipboard-notes-icon" loading="lazy" alt=""
+                                            src="img/uilclipboardnotes.svg">
+                                    </div>
+                                    <div class="client-card">
+                                        <div class="client-content">
+                                            <a class="total-clients">Active Subscriptions</a>
+                                            <div class="see-your-total">
+                                                See your Active Subscriptions
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="support-card">
+                                    <b class="b">00001</b>
+                                    <div class="arrow">
+                                        <img class="icons" loading="lazy" alt="" src="img/icons.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="component-174 component-176">
+                            <div class="trial-content">
+                                <div class="trial-icon-parent">
+                                    <div class="trial-icon">
+                                        <div class="trial-icons"></div>
+                                        <img class="uil-clipboard-notes-icon" loading="lazy" alt=""
+                                            src="img/uilclipboardnotes.svg">
+                                    </div>
+                                    <div class="client-card">
+                                        <div class="client-content">
+                                            <a class="total-clients">On Trial Tenants</a>
+                                            <div class="see-your-total">
+                                                See your Trail Tenants
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="support-card">
+                                    <b class="b">00001</b>
+                                    <div class="arrow">
+                                        <img class="icons" loading="lazy" alt="" src="img/icons.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="component-174 component-177">
+                            <div class="trial-content">
+                                <div class="trial-icon-parent">
+                                    <div class="trial-icon">
+                                        <div class="trial-icons"></div>
+                                        <img class="uil-clipboard-notes-icon" loading="lazy" alt=""
+                                            src="img/uilclipboardnotes.svg">
+                                    </div>
+                                    <div class="client-card">
+                                        <div class="client-content">
+                                            <a class="total-clients">Support Tickets</a>
+                                            <div class="see-your-total">
+                                                See Pending Support Tickets
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="support-card">
+                                    <b class="b">00001</b>
+                                    <div class="arrow">
+                                        <img class="icons" loading="lazy" alt="" src="img/icons.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid  onboarding-row ">
+                        <div class="chart-box">
+                            <div class="chart-header">
+                                <div>
+                                    <h2 class="text-2">User Growth</h2>
+                                    <p class="text-3">Observe behavior Growth</p>
+                                </div>
+                                <div>
+                                    <ul class="nav nav-tabs days bg-white" id="chartTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link active" id="chart-home-tab" data-toggle="tab"
+                                                href="#chart-home" role="tab" aria-controls="chart-home"
+                                                aria-selected="true">30 days</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="chart-profile-tab" data-toggle="tab"
+                                                href="#chart-profile" role="tab" aria-controls="chart-profile"
+                                                aria-selected="false">7 days</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="chart-contact-tab" data-toggle="tab"
+                                                href="#chart-contact" role="tab" aria-controls="chart-contact"
+                                                aria-selected="false">Today</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="chart-img">
+                                <div class="tab-content" id="chartTabContent">
+                                    <div class="tab-pane fade show active" id="chart-home" role="tabpanel"
+                                        aria-labelledby="chart-home-tab">
+                                        <img src="img/chart1.png" class="img-fluid" alt="Line and bar chart">
+                                    </div>
+                                    <div class="tab-pane fade" id="chart-profile" role="tabpanel"
+                                        aria-labelledby="chart-profile-tab">
+                                        <img src="img/chart1.png" class="img-fluid" alt="Line and bar chart">
+                                    </div>
+                                    <div class="tab-pane fade" id="chart-contact" role="tabpanel"
+                                        aria-labelledby="chart-contact-tab">
+                                        <img src="img/chart1.png" class="img-fluid" alt="Line and bar chart">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="box-t">
+                            <div class="onboarding-clients">
+                                <div class="onboarding-header">
+                                    <h5>Subscriptions Status</h5>
+
+                                </div>
+                                <hr>
+                                <div class="chart-content">
+                                    <div>
+                                        <img src="img/component-171.svg" class="" alt="">
+                                    </div>
+
+                                    <div class="dot-child">
+                                        <div class="dot-child-1">
+                                            <div>
+                                                <div class="dot dot-new"></div>
+                                                <p>New</p>
+                                            </div>
+                                            <div>
+                                                <div class="dot dot-active"></div>
+                                                <p>Active</p>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="dot-child-2">
+                                            <div>
+                                                <div class="dot dot-canceled"></div>
+                                                <p>Canceled</p>
+                                            </div>
+                                            <div>
+                                                <div class="dot dot-trail"></div>
+                                                <p>Trial</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid onboarding-row">
+                        <div class="chart-box">
+                            <div class="chart-header">
+                                <div>
+                                    <h2 class="text-2">Revenue Trends</h2>
+                                    <!-- <p class="text-3">Observe revenue behavior</p> -->
+                                </div>
+                                <div>
+                                    <ul class="nav nav-tabs days bg-white" id="revenueChartTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link active" id="revenue-30-days-tab" data-toggle="tab"
+                                                href="#revenue-30-days" role="tab" aria-controls="revenue-30-days"
+                                                aria-selected="true">30 days</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="revenue-7-days-tab" data-toggle="tab"
+                                                href="#revenue-7-days" role="tab" aria-controls="revenue-7-days"
+                                                aria-selected="false">7 days</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="revenue-today-tab" data-toggle="tab"
+                                                href="#revenue-today" role="tab" aria-controls="revenue-today"
+                                                aria-selected="false">Today</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="chart-img">
+                                <div class="tab-content" id="revenueChartTabContent">
+                                    <div class="tab-pane fade show active" id="revenue-30-days" role="tabpanel"
+                                        aria-labelledby="revenue-30-days-tab">
+                                        <img src="img/vector1" class="img-fluid" alt="Line and bar chart">
+                                    </div>
+                                    <div class="tab-pane fade" id="revenue-7-days" role="tabpanel"
+                                        aria-labelledby="revenue-7-days-tab">
+                                        <img src="img/vector1" class="img-fluid" alt="Line and bar chart">
+                                    </div>
+                                    <div class="tab-pane fade" id="revenue-today" role="tabpanel"
+                                        aria-labelledby="revenue-today-tab">
+                                        <img src="img/vector1" class="img-fluid" alt="Line and bar chart">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-t">
+                            <div class="onboarding-clients">
+                                <div class="onboarding-header">
+                                    <h5>Quick Actions</h5>
+                                </div>
+                                <hr>
+                                <div class="action-row">
+                                    <div class="action-child-row">
+                                        <div class="action-user"><img src="img/group.svg" alt="icon"></div>
+                                        <h5>Add New User</h5>
+                                        <button class="click-here">click here</button>
+                                    </div>
+
+                                    <div class="action-child-row">
+                                        <div class="action-user"><img src="img/group.svg" alt="icon"></div>
+                                        <h5>Create New Plan</h5>
+                                        <button class="click-here">click here</button>
+                                    </div>
+
+                                    <div class="action-child-row">
+                                        <div class="action-user"><img src="img/group.svg" alt="icon"></div>
+                                        <h5>Generate Repots</h5>
+                                        <button class="click-here">click here</button>
+                                    </div>
+
+                                    <div class="action-child-row">
+                                        <div class="action-user"><img src="img/group.svg" alt="icon"></div>
+                                        <h5>Backup Database</h5>
+                                        <button class="click-here">click here</button>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="container-fluid py-3 b-w bg-white ">
+                            <div class="rows-header">
+                                <div>
+                                    <b>
+                                        <h3 class="recent-reports">Recent Reports</h3>
+                                    </b>
+                                    <p class="reports-para">Keep track of your latest client reports with easy access
+                                        and
+                                        management</p>
+                                </div>
+                                <br>
+                                <div class="button-p">
+                                    <a class="add d-block px-3 py-2 bg-white text-center border-btn"><img
+                                            src="img/icons-6.svg" alt="icon"> Filter</a>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="recent-report-list">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="today-tab" data-toggle="tab" href="#today"
+                                            role="tab" aria-controls="today" aria-selected="true">Today</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="seven-days-tab" data-toggle="tab" href="#seven-days"
+                                            role="tab" aria-controls="seven-days" aria-selected="false">7 days</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="thirty-days-tab" data-toggle="tab" href="#thirty-days"
+                                            role="tab" aria-controls="thirty-days" aria-selected="false">30 days</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="last-year-tab" data-toggle="tab" href="#last-year"
+                                            role="tab" aria-controls="last-year" aria-selected="false">Last Year</a>
+                                    </li>
+                                </ul>
+                                <br>
+                                <div class="reposrts-row mt-3">
+                                    <div class="reposrts-heading">
+                                        <b>
+                                            <p>Client Name</p>
+                                        </b>
+                                        <b>
+                                            <p>Date</p>
+                                        </b>
+                                        <b>
+                                            <p>Status</p>
+                                        </b>
+                                        <b>
+                                            <p>PAN No.</p>
+                                        </b>
+                                        <b>
+                                            <p>Quick Actions</p>
+                                        </b>
+                                    </div>
+
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="today" role="tabpanel"
+                                            aria-labelledby="today-tab">
+                                            <!-- today reports -->
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-completed">
+
+                                                        accepted
+                                                    </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-pending"> pending </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-completed">
+
+                                                        accepted
+                                                    </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+
+                                                <div>
+                                                    <p class="status-pending"> pending </p>
+                                                </div>
+
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-completed">
+
+                                                        accepted
+                                                    </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-completed">
+
+                                                        accepted
+                                                    </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+
+                                                <div>
+                                                    <p class="status-pending">pending </p>
+                                                </div>
+
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-pending"> pending </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-completed">
+
+                                                        accepted
+                                                    </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+                                            <!-- today reports -->
+                                        </div>
+
+                                        <div class="tab-pane fade" id="seven-days" role="tabpanel"
+                                            aria-labelledby="seven-days-tab">
+                                            <!-- 7 days reports -->
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-completed">
+
+                                                        accepted
+                                                    </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-pending"> pending </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-pending"> pending </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-completed">
+
+                                                        accepted
+                                                    </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-completed">
+
+                                                        accepted
+                                                    </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-completed">
+
+                                                        accepted
+                                                    </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-pending"> pending </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-completed">
+
+                                                        accepted
+                                                    </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+                                            <!-- 7 days reports -->
+                                        </div>
+
+                                        <div class="tab-pane fade" id="thirty-days" role="tabpanel"
+                                            aria-labelledby="thirty-days-tab">
+
+                                            <!-- 30 days reports -->
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-completed">
+
+                                                        accepted
+                                                    </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-completed">
+
+                                                        accepted
+                                                    </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-pending"> pending </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-completed">
+
+                                                        accepted
+                                                    </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-completed">
+
+                                                        accepted
+                                                    </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+
+                                            <!-- 30 days reports -->
+                                        </div>
+
+                                        <div class="tab-pane fade" id="last-year" role="tabpanel"
+                                            aria-labelledby="last-year-tab">
+                                            <!-- last year reporst -->
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-pending">pending </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-completed">
+                                                        accepted
+                                                    </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-pending"> pending </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-completed">
+
+                                                        accepted
+                                                    </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-completed">
+
+                                                        accepted
+                                                    </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-completed">
+
+                                                        accepted
+                                                    </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="reports-row-data">
+                                                <div class="client-name">
+                                                    <input type="checkbox" name="check" id="check">
+                                                    <div>
+                                                        <h6>client name</h6>
+                                                        <p>192803-AB920</p>
+                                                    </div>
+                                                </div>
+                                                <div class="date">09/06/2023</div>
+                                                <div>
+                                                    <p class="status-completed">
+
+                                                        accepted
+                                                    </p>
+                                                </div>
+                                                <div class="pan-number">FPKPD5658D</div>
+                                                <div class="tool-icon">
+                                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+                                            <!-- last year reporst -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+</body>

@@ -1,0 +1,417 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <script src="js/jqerry.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+<script>
+
+
+</script>
+
+<body>
+    <section class="main-frame">
+        <div class="sidebar-frame">
+            <div class="frame-group">
+                <div class="tallyflow-frame">
+                    <a class="TallyFlow">TallyFlow</a>
+                    <img class="frame-child" alt="" src="img/vector-190.svg">
+                </div>
+
+                <nav class="nav-content-frame list-unstyled">
+                    <li class="nav-item">
+                        <a class="sidebar-navs-links" href="index.html">
+                            <img src="img/management-icon.svg" alt="icon">Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="sidebar-navs-links" data-toggle="collapse" data-target="#userManagement">
+                            <img src="img/user-management.svg" alt="icon"><span>User Management</span>
+                            <img src="img/uilangledown.svg" class="arrow-icon" alt="icon">
+                        </a>
+                        <div class="collapse gap-link" id="userManagement">
+                            <a href="asign-role.html" class="links-check">
+                                <div class="check   mt-1"></div>Assign Role
+                            </a>
+                            <a href="clients-list.html" class="links-check ">
+                                <div class="check  mt-1"></div>List of clients
+                            </a>
+                            <a href="tanants-list.html" class="links-check active">
+                                <div class="check active mt-1"></div>List of Tenants
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="sidebar-navs-links" data-toggle="collapse" data-target="#planSubscriptions">
+                            <img src="img/plans--subscriptions.svg" alt="icon"><span>Plan & Subscriptions</span>
+                            <img src="img/uilangledown.svg" class="arrow-icon" alt="icon">
+                        </a>
+                        <div class="collapse gap-link" id="planSubscriptions">
+                            <a href="plan-and-features.html"  class="links-check">
+                                <div class="check mt-1"></div>Set
+                                Plans/Add Features
+                            </a>
+                            <a href="subcription.html" class="links-check">
+                                <div class="check mt-1"></div>Set
+                                Subcriptions
+                            </a>
+                            <a href="send-mail.html" class="links-check">
+                                <div class="check mt-1"></div>
+                                Promotion/Send E-Mail
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="sidebar-navs-links" data-toggle="collapse" data-target="#payments">
+                            <img src="img/financial.svg" alt="icon"><span>Financial</span>
+                            <img src="img/uilangledown.svg" class="arrow-icon" alt="icon">
+                        </a>
+                        <div class="collapse gap-link" id="payments">
+                            <a href="#" class="links-check">
+                                <div class="check mt-1"></div>
+                                Payments
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="sidebar-navs-links" data-toggle="collapse" data-target="#supports">
+                            <img src="img/vector-1.svg" alt="icon"><span>Support</span>
+                            <img src="img/uilangledown.svg" class="arrow-icon" alt="icon">
+                        </a>
+                        <div class="collapse gap-link" id="supports">
+                            <a href="#" class="links-check">
+                                <div class="check mt-1"></div>
+                                ticket-supports
+                            </a>
+                            <a href="#" class="links-check">
+                                <div class="check mt-1"></div>
+                                Documentation
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="sidebar-navs-links" data-toggle="collapse" data-target="#accounts">
+                            <img src="img/account.svg" alt="icon"><span>Account</span>
+                            <img src="img/uilangledown.svg" class="arrow-icon" alt="icon">
+                        </a>
+                        <div class="collapse gap-link" id="accounts">
+                            <a href="" class="links-check">
+                                <div class="check mt-1"></div>Database Backup
+                            </a>
+                            <a href="#" class="links-check">
+                                <div class="check mt-1"></div>
+                                Account Setting
+                            </a>
+                        </div>
+                    </li>
+                </nav>
+            </div>
+            <div class="user-card-wrapper">
+                <div class="user-card">
+                    <div class="frame-container">
+                        <div class="user-image-parent">
+                            <div class="user-image"><img src="img/ca_profile_img.jpg" alt=""></div>
+                            <div class="credentials-wrapper">
+                                <div class="credentials">
+                                    <div class="david-sorbitol">David Sorbitol</div>
+                                    <div class="davidemailcom">david@email.com</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vector-wrapper">
+                            <img class="vector-icon1" loading="lazy" alt="" src="./img/vector-2.svg"
+                                aria-colspan="arrow-icon">
+                        </div>
+                    </div>
+                    <div class="logout-t" style="display: none;">
+                        <a class="logout text-center" href='#'>Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-section-component">
+            <!-- top section -->
+            <header class="top-section">
+                <span><a href="#" class="inactive-breadcrumb">User Management &gt; </a> <a href="#"
+                        class="active-bread-crumb">List of Clients</a></span>
+
+                <div class="call-notification">
+                    <div class="call">
+                        <a class="call-us">Call Us:</a>
+                        <a class="call-us1">0000-0000-00</a>
+                    </div>
+                    <img class="call-icon" alt="" src="img/call-icon.svg">
+                    <div class="notifications">
+                        <div class="buttons" id="notification-btn">
+                            <img class="notification-icon" loading="lazy" alt="notification" src="img/notification.svg">
+                            <div class="notification-section" style="display: none;">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="home-tab" data-toggle="tab"
+                                            data-target="#home" type="button" role="tab" aria-controls="home"
+                                            aria-selected="true">Notifications</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="profile-tab" data-toggle="tab"
+                                            data-target="#profile" type="button" role="tab" aria-controls="profile"
+                                            aria-selected="false">Announcements</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                        aria-labelledby="home-tab">...1</div>
+                                    <div class="tab-pane fade" id="profile" role="tabpanel"
+                                        aria-labelledby="profile-tab">
+                                        ...2</div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="buttons profile-btn" id="profile-btn">
+                            <img class="user-icon" loading="lazy" id="profile-toggle" alt="notification"
+                                src="img/user.svg">
+                            <div class="profile-section " id="profile-section" style="display:none;">
+                                <div class="profile-name-content">
+                                    <div>
+                                        <img class="profile-image" src="img/profile-card.png" alt="profile">
+                                    </div>
+                                    <div class="flex-name-id">
+                                        <h4><b>CA Name</b></h4>
+                                        <p>USer ID : <span> CA0001</span></p>
+                                        <p>Email : <span> ca001@gmail.com</span></p>
+                                        <p>Type : <span>ca</span></p>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-right d-block ml-auto text-danger">
+                                    <span><img src="img/logout.svg" alt="logout"></span> Sign Out</a>
+                                <div class="profile-box"></div>
+                                <div class="profile-box"></div>
+                                <div class="profile-box"></div>
+                                <div class="profile-box"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- top section -->
+            <div class="middle-frame-section  home-middle-section">
+
+                <section class="bg-white container-fluid pt-4">
+                    <div class="container-fluid">
+                        <div class="client-target">
+                            <div class="list-data-search">
+                                <div>
+                                    <h5 class="list-heading">Tenants</h5>
+                                    <p class="list-para">View all of your Tenants information's</p>
+                                </div>
+                                <div class="rectangle-btn">
+                                    <button class="export-btn"><img src="img/vector-5.svg" alt="icon">
+                                        <span>Export</span></button>
+                                    <button class="add-btn"><img src="img/plus.svg"> <span>Add New</span></button>
+                                </div>
+                            </div>
+
+                            <hr>
+                            <div class="my-2">
+                                <form action="">
+                                    <div class="search-filter">
+                                        <div class="search2 col-lg-4 px-0">
+                                            <div class="search-fields1">
+                                                <input type="text" class="search3" placeholder="Search for Tenants">
+                                                <img class="iconsearch1" alt="icon" src="img/iconsearch@2x.png">
+                                            </div>
+                                        </div>
+                                        <button class="buttons11">
+                                            <img class="icons9" alt="" src="img/icons2.svg">
+
+                                            <div class="filters">Filters</div>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="clients-table">
+                            <div class="table-head">
+                                <p><input type="checkbox" name="check-client" disabled>Tenant Name</p>
+                                <p>Email</p>
+                                <p>Plan</p>
+                                <p>Is Subscribed</p>
+                                <p>Quick Actions</p>
+                            </div>
+                            <!--table row -->
+                            <div class="table-client-row ">
+                                <div class="name-client">
+                                    <input type="checkbox" name="check-row" id="check-row">
+                                    <div>
+                                        <p>Tenant Name</p>
+                                        <p>192803-AB920</p>
+                                    </div>
+                                </div>
+                                <p>exclient@gmail.com</p>
+                                <p>New Business</p>
+                                <p>Yes</p>
+                                <div class="tool-icon">
+                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                </div>
+                            </div>
+
+                            <div class="table-client-row 2">
+                                <div class="name-client">
+                                    <input type="checkbox" name="check-row" id="check-row">
+                                    <div>
+                                        <p>Tenant Name</p>
+                                        <p>192803-AB920</p>
+                                    </div>
+                                </div>
+                                <p>exclient@gmail.com</p>
+                                <p>New Business</p>
+                                <p>Yes</p>
+                                <div class="tool-icon">
+                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                </div>
+                            </div>
+
+
+
+                            <div class="table-client-row 3">
+                                <div class="name-client">
+                                    <input type="checkbox" name="check-row" id="check-row">
+                                    <div>
+                                        <p>Tenant Name</p>
+                                        <p>192803-AB920</p>
+                                    </div>
+                                </div>
+                                <p>exclient@gmail.com</p>
+                                <p>New Business</p>
+                                <p>Yes</p>
+                                <div class="tool-icon">
+                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                </div>
+                            </div>
+
+
+
+                            <div class="table-client-row 4">
+                                <div class="name-client">
+                                    <input type="checkbox" name="check-row" id="check-row">
+                                    <div>
+                                        <p>Tenant Name</p>
+                                        <p>192803-AB920</p>
+                                    </div>
+                                </div>
+                                <p>exclient@gmail.com</p>
+                                <p>New Business</p>
+                                <p>Yes</p>
+                                <div class="tool-icon">
+                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                </div>
+                            </div>
+
+
+                            <div class="table-client-row 5">
+                                <div class="name-client">
+                                    <input type="checkbox" name="check-row" id="check-row">
+                                    <div>
+                                        <p>Tenant Name</p>
+                                        <p>192803-AB920</p>
+                                    </div>
+                                </div>
+                                <p>exclient@gmail.com</p>
+                                <p>New Business</p>
+                                <p>Yes</p>
+                                <div class="tool-icon">
+                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                </div>
+                            </div>
+
+
+
+                            <div class="table-client-row 6">
+                                <div class="name-client">
+                                    <input type="checkbox" name="check-row" id="check-row">
+                                    <div>
+                                        <p>Tenant Name</p>
+                                        <p>192803-AB920</p>
+                                    </div>
+                                </div>
+                                <p>exclient@gmail.com</p>
+                                <p>New Business</p>
+                                <p>Yes</p>
+                                <div class="tool-icon">
+                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                </div>
+                            </div>
+
+                            <div class="table-client-row 7">
+                                <div class="name-client">
+                                    <input type="checkbox" name="check-row" id="check-row">
+                                    <div>
+                                        <p>Tenant Name</p>
+                                        <p>192803-AB920</p>
+                                    </div>
+                                </div>
+                                <p>exclient@gmail.com</p>
+                                <p>New Business</p>
+                                <p>Yes</p>
+                                <div class="tool-icon">
+                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                </div>
+                            </div>
+
+                            <div class="table-client-row 8">
+                                <div class="name-client">
+                                    <input type="checkbox" name="check-row" id="check-row">
+                                    <div>
+                                        <p>Tenant Name</p>
+                                        <p>192803-AB920</p>
+                                    </div>
+                                </div>
+                                <p>exclient@gmail.com</p>
+                                <p>New Business</p>
+                                <p>Yes</p>
+                                <div class="tool-icon">
+                                    <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+                                    <a href="#"><img src="img/uilprint.svg" alt="icon"></a>
+                                    <a href="#"><img src="img/uilimport.svg" alt="icon"></a>
+                                </div>
+                            </div>
+                            <!--table row -->
+                        </div>
+                        
+
+                    </div>
+                </section>
+
+            </div>
+
+
+        </div>
+    </section>
+</body>
+
+</html>
