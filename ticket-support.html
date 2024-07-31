@@ -10,7 +10,6 @@
     <script src="js/jqerry.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
-
 </head>
 <script>
 
@@ -55,16 +54,16 @@
                             <img src="img/uilangledown.svg" class="arrow-icon" alt="icon">
                         </a>
                         <div class="collapse gap-link" id="planSubscriptions">
-                            <a href="plan-and-features.html" class="links-check">
-                                <div class="check mt-1"></div>Set
+                            <a href="plan-and-features.html" class="links-check ">
+                                <div class="check  mt-1"></div>Set
                                 Plans/Add Features
                             </a>
-                            <a href="subcription.html" class="links-check ">
-                                <div class="check mt-1 "></div>Set
+                            <a href="subcription.html" class="links-check">
+                                <div class="check mt-1"></div>Set
                                 Subcriptions
                             </a>
-                            <a href="send-mail.html" class="links-check active">
-                                <div class="check mt-1 active"></div>
+                            <a href="send-mail.html" class="links-check">
+                                <div class="check mt-1"></div>
                                 Promotion/Send E-Mail
                             </a>
                         </div>
@@ -87,8 +86,8 @@
                             <img src="img/uilangledown.svg" class="arrow-icon" alt="icon">
                         </a>
                         <div class="collapse gap-link" id="supports">
-                            <a href="ticket-support.html" class="links-check">
-                                <div class="check mt-1"></div>
+                            <a href="ticket-support.html" class="links-check active">
+                                <div class="check mt-1 active"></div>
                                 ticket-supports
                             </a>
                             <a href="documentation.html" class="links-check">
@@ -140,8 +139,8 @@
         <div class="main-section-component">
             <!-- top section -->
             <header class="top-section">
-                <span><a href="#" class="inactive-breadcrumb">Plan & Subscriptions&gt; </a> <a href="#"
-                        class="active-bread-crumb">Promotion/Send E-mail</a></span>
+                <span><a href="#" class="inactive-breadcrumb">Support &gt; </a> <a href="#"
+                        class="active-bread-crumb">Ticket Support</a></span>
 
                 <div class="call-notification">
                     <div class="call">
@@ -204,74 +203,123 @@
             </header>
             <!-- top section -->
             <div class="middle-frame-section  home-middle-section">
-                <section class=" container-fluid pt-4">
-                    <form action="" class="form-mail">
-                    <div class="container-fluid">
-                        <div class="client-target">
-                            <div class="list-data-search">
-                                <div>
-                                    <h5 class="list-heading">Send Email</h5>
-                                    <p class="list-para">Write your all information for send email.</p>
-                                </div>
-                                <div class="rectangle-btn">
-                                    <button class="add-btn send-btn"><img src="img/share2.svg"> <span>Send
-                                            </span></button>
-                                </div>
+                <div class="container-fluid padding-2">
+                    <div class="client-target">
+                        <div class="list-data-search">
+                            <div>
+                                <h5 class="list-heading">Ticket Support</h5>
+                                <p class="list-para">This feature for ticket support</p>
                             </div>
-
-                            <hr>
-
+                            <div class="rectangle-btn align-items-center">
+                                <button class="add-btn"><img src="img/plus.svg"> <span>Create</span></button>
+                            </div>
                         </div>
 
-                            <div class="w-full subcribe-form-row">
-                                <div class="form-group mb-0">
-                                    <label class="custom-form-lable">Subject <span style="color: red;">*</span></label>
-                                    <input type="text" name="subject" class="mail-form-input"
-                                        placeholder="Enter Subject">
-                                </div>
+                        <hr>
+                        <div>
 
-                                <div class="form-group mb-0">
-                                    <label class="custom-form-lable">Send to <span style="color: red;">*</span></label>
-                                    <input type="text" name="send-to" placeholder="Send-to" class="mail-form-input">
+                            <div class="search-filter">
+                                <div class="search2 col-lg-4 px-0">
+                                    <div class="search-fields1">
+                                        <input type="text" class="search3" placeholder="Search for Clients">
+                                        <img class="iconsearch1" alt="icon" src="img/iconsearch@2x.png">
+                                    </div>
                                 </div>
-
-                                <div class="form-group mb-0">
-                                    <label class="custom-form-lable">Greeting <span style="color: red;">*</span></label>
-                                    <input type="text" name="greeting" class="mail-form-input" placeholder="Greeting">
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="custom-form-lable">Body <span class="text-danger">*</span></label>
-                                    <table class="table form-table">
-                                        <thead class="bg-grey-100">
-                                            <tr class="my-0 ">
-                                                <th class="py-3"></th>
-
-                                                <th class="py-3"></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="my-0">
-                                                <td class="p-0"><textarea name="mail-text-1" class="text-area-form"
-                                                        id=""></textarea></td>
-                                                <td class="p-0"><textarea name="mail-text-2" class="text-area-form"
-                                                        id=""></textarea></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                                <button class="buttons11">
+                                    <img class="icons9" alt="icon" src="img/icons2.svg">
+                                    <div class="filters">Filters</div>
+                                </button>
                             </div>
 
-                        </form>
-                        <div class="d-flex justify-content-end">
-                            <button class="reset">
-                                <img src="img/reset.svg" alt="">Reset
-                            </button>
                         </div>
-
-
                     </div>
-                </section>
+                </div>
+                <div class="container-fluid ">
+
+                    <div class="table-responsive  ">
+                        <table class="table table-bordered bg-white table-fixed table-tickets">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>Sr.</th>
+                                    <th>Ticket Number</th>
+                                    <th>Ticket ID</th>
+                                    <th>User ID</th>
+                                    <th>Problem</th>
+                                    <th>Status</th>
+                                    <th>Quick Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>FPK2024</td>
+                                    <td>2024001</td>
+                                    <td>CA0025</td>
+                                    <td>
+                                        <li class="text-justify">Lorem Ipsum is simply dummy text of the printing
+                                            and typesetting industry. Lorem Ipsum has been the industry's
+                                            standard dummy text ever since the 1500s, when an unknown printer took a
+                                            galley of type and scrambled it to make a type specimen book. It
+                                            has survived not only five centuries, but also the leap <br> into
+                                            electronic typesetting, remaining <br> essentially unchanged.</li>
+                                    </td>
+                                    <td><span class="status-seen">Seen</span></td>
+                                    <td>
+                                        <div class="tool-icon">
+                                            <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+
+                                            <a href="#"><img src="img/delete1.svg" alt="icon"></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>ABC2024</td>
+                                    <td>2024006</td>
+                                    <td>AA0003</td>
+                                    <td>
+                                        <li class="text-justify">Lorem Ipsum is simply dummy text of the printing
+                                            and typesetting industry. Lorem Ipsum has been the industry's
+                                            standard dummy text ever since the 1500s, when an unknown printer took a
+                                            galley of type and scrambled it to make a type specimen book. It
+                                            has survived not only five centuries, but also the leap into
+                                            electronic typesetting, remaining <br> essentially unchanged.</li>
+                                    </td>
+                                    <td><span class="status-unseen">Pending</span></td>
+                                    <td>
+                                        <div class="tool-icon">
+                                            <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+
+                                            <a href="#"><img src="img/delete1.svg" alt="icon"></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>DEF2024</td>
+                                    <td>2024011</td>
+                                    <td>USER0025</td>
+                                    <td>
+                                        <li class="text-justify">Lorem Ipsum is simply dummy text of the printing
+                                            and typesetting industry. Lorem Ipsum has been the industry's
+                                            standard dummy text ever since the 1500s, when an unknown printer took a
+                                            galley of type and scrambled it to make a type specimen book. It
+                                            has survived not only five centuries, but also the leap into
+                                            electronic typesetting, remaining essentially unchanged.</li>
+                                    </td>
+                                    <td><span class="status-seen">Seen</span></td>
+                                    <td>
+                                        <div class="tool-icon">
+                                            <a href="#"><img src="img/uiledit.svg" alt="icon"></a>
+    
+                                            <a href="#"><img src="img/delete1.svg" alt="icon"></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
             </div>
 

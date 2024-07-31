@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
@@ -2390,7 +2389,7 @@ a {
     flex-direction: column;
     align-self: stretch;
     width: 100%;
-    gap: 10px;
+    gap: 15px;
 }
 
 .subcribe-form-row .mail-form-input {
@@ -2466,4 +2465,359 @@ a {
     gap: 10px;
 }
 
-/* subcription page */
+/* mail page */
+
+.table-payments th {
+    vertical-align: top;
+}
+
+
+
+.table-payments td,
+.table-payments th {
+    padding: 1.5rem !important;
+
+}
+
+.table-payments td {
+    align-content: center;
+    border-top: 1px solid #dee2e6;
+}
+
+
+
+
+.table-payments tbody th {
+    vertical-align: middle;
+    color: #000000;
+
+}
+
+
+
+.table-payments .status-success {
+    background: #9FF4CA;
+    color: #00944B;
+    padding: 2px 5px;
+    border-radius: 20px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.table-payments .status-failed {
+    background: #FFCBCB;
+    color: #FF4300;
+    padding: 2px 3px;
+    border-radius: 20px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    display: block;
+    margin: auto;
+
+}
+
+/* mail page */
+
+/* tickets-page */
+
+.table-tickets {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.table-tickets th,
+.table-tickets td {
+    word-wrap: break-word;
+
+    text-align: center;
+    /* Horizontal alignment */
+}
+
+.table-tickets .tool-icon {
+    justify-content: center;
+}
+
+.table-tickets th:nth-child(1),
+.table-tickets td:nth-child(1) {
+
+    width: 3% !important;
+}
+
+.table-tickets th:nth-child(5),
+.table-tickets td:nth-child(5) {
+    width: 20%;
+    padding: 1rem;
+
+}
+
+.table-tickets th:not(:nth-child(5)),
+.table-tickets td:not(:nth-child(5)) {
+    width: 10%;
+}
+
+
+.text-justify {
+    text-align: justify;
+}
+
+.status-seen {
+    background: #9FF4CA;
+    color: #00944B;
+    padding: 2px 5px;
+    border-radius: 20px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.status-unseen {
+    background: #FFCBCB;
+    color: #FF4300;
+    padding: 2px 3px;
+    border-radius: 20px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+/* tickets-page */
+
+
+/* account page */
+.account-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px;
+    border-bottom: 1px solid #cecece;
+}
+
+.account-content h2 {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: -0.013em;
+    text-align: left;
+    color: #1E293B;
+}
+
+.account-content .account-search {
+    border: none;
+    outline: none;
+    border: 1px solid #CBD5E1;
+    padding: 10px;
+    width: 320px;
+    color: #000;
+    border-radius: 8px;
+    position: relative;
+
+}
+
+.account-setting {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.accout-heading h5 {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: #1E293B;
+}
+
+.accout-heading p {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+
+    color: #1E293B;
+}
+
+.accoutn-container {
+    position: relative;
+}
+
+.account-content .account-search:focus {
+    border: none;
+    outline: none;
+    border: 1px solid #CBD5E1;
+}
+
+.flex-items {
+    display: flex;
+    align-items: center;
+   justify-content: start;
+ 
+}
+.flex-items .col-lg-4
+{
+
+}
+
+
+.setting-search {
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.account-inputs {
+   width: 400px;
+    border: none;
+    outline: none;
+    border: 1px solid #CBD5E1;
+    padding: 10px;
+
+    color: #000;
+    border-radius: 8px;
+    position: relative;
+}
+
+.setting-lable {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.007em;
+    text-align: left;
+
+    color: #000;
+}
+
+.custom-biography {
+    width: 100%;
+    border: none;
+    outline: none;
+    border: 1px solid #CBD5E1;
+    padding: 10px;
+    height: 200px;
+    color: #000;
+    border-radius: 8px;
+    position: relative;
+}
+
+.custom-biography::placeholder {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+    color: #475569;
+
+}
+
+.account-profile {
+    height: 100px;
+    width: 100px;
+    object-position: top;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+
+.profile-edit-btn {
+    border-radius: 32px;
+    padding: 10px 16px;
+    border: none;
+    background: #1E293B;
+    color: white;
+
+
+}
+
+.profile-delete-btn {
+    border-radius: 32px;
+    padding: 10px 16px;
+    border: none;
+    background: #F43F5E;
+    color: white;
+
+}
+
+.save-settings {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+.clear {
+    border: 1px solid #CBD5E1;
+    border-radius: 32px;
+    padding: 10px 16px;
+    background-color: transparent;
+}
+.save-btn{
+    border-radius: 32px;
+    padding: 10px 16px;
+    background-color: #4F46E5;
+    border: none;
+    color: white;
+}
+
+.custom-select {
+    border-top-right-radius: 2px;
+
+    border-bottom-right-radius: 2px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+
+.input-phone {
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    padding: 0px 10px;
+}
+
+
+.select-pre{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    outline: none;
+    border: 1px solid #CBD5E1;
+    padding: 10px;
+    color: #000;
+  
+}
+.border-0{
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+@media screen and (max-width:600px) {
+    .account-content {
+        flex-wrap: wrap;
+    }
+}
+
+/* account page */
